@@ -5,9 +5,6 @@
 $popup = New-Object -ComObject WScript.Shell
 $ServerString = ""
 
-#---Load Modules
-Import-Module "C:\AutomatedUpdates\PSWindowsUpdate_2.0.0.3\PSWindowsUpdate.psd1"
-
 #---Script
 
 #Get and Choose Server List from AD
