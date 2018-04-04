@@ -1,5 +1,6 @@
-﻿#Autor: Kai Herzig, Heiko Neblung
-#Date: 12.02.2018
+#GitHub: https://github.com/Kai-Herzig/WinRM-Commander
+#Author: Kai Herzig (https://github.com/Kai-Herzig), Heiko Neblung (https://github.com/ThirstySpace)
+#Date: 04.04.2018
 
 #---Variables
 $popup = New-Object -ComObject WScript.Shell
