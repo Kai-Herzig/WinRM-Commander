@@ -22,7 +22,7 @@ ToDo: @Kai-Herzig please add an intruction how to install all dependencies and t
 
 ### Usage
 
-Just execute the [WinRM-Commander.ps1](./source/WinRM-Commander.ps1) PowerShell script on a server which mets the recommandations above.
+Just execute the [WinRM-Commander.ps1](./src/WinRM-Commander.ps1) PowerShell script on a server which mets the recommandations above.
 
 You will then guided through the Tool via wizard.
 
