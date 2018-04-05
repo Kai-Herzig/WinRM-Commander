@@ -5,6 +5,8 @@
 #---Variables
 $popup = New-Object -ComObject WScript.Shell
 $ServerString = ""
+$scriptPath = split-path -parent $MyInvocation.MyCommand.Definition
+
 
 #---Script
 
@@ -18,7 +20,8 @@ foreach ($Server in $Servers) {
 }
 
 #Get and Choose Command from Textfile
-$Command = Get-ChildItem -Path .\scripts\ | Out-GridView -Title "Select Command" -PassThru
+$CommandPath = Join-Path -Path $scriptPath -ChildPath "scripts"
+$Command = Get-ChildItem -Path $CommandPath | Out-GridView -Title "Select Command" -PassThru
 
 #Build ScriptBlock for Invoke-Command (WinRM)
 $ScriptBlock = [ScriptBlock]::Create($(Get-Content $Command.FullName))
