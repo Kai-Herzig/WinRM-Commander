@@ -1,8 +1,0 @@
-$Computer = $env:computername
-$domain = $env:USERDNSDOMAIN
-$grp = "loc_$($Computer)_admin"
-$grp2 = "loc_$($Computer)_rdpusr"
-$AdminGroup = [ADSI]("WinNT://$Computer/Administrators,Group")
-$AdminGroup.Add("WinNT://$Domain/$grp,Group")
-$RDPGroup = [ADSI]("WinNT://$Computer/Remote Desktop Users,Group")
-$RDPGroup.Add("WinNT://$Domain/$grp2,Group")
